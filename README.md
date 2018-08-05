@@ -28,6 +28,8 @@ python3 server.py
 
 The webserver will be launched under the socket [http://0.0.0.0:5000/](http://0.0.0.0:5000/).
 By default the server will stream gray frames with the guidelines of the detected faces + COI as well as a static threshold rectangle.
+![Alt text](/github/screenshot.png?raw=true "Screenshow of Website")
+
 I use the threshold rectangle to only make a camera gimbal moving when the COI is out of those boundaries.
 Note, that the Python script will output relative correction angles once the threshold is exceeded.
 
