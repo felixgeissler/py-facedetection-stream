@@ -48,7 +48,7 @@ Furthermore you might want to adjust the threshold range. Therefore you only hav
 # 0.0 = agressive movement, 1.0 = not movement
 frame_face_detected = facedetection.fnc(frame, 0.3, 0.25)
 ```
-The second and third parameter of the facedetection.fnc are the percentage of captured frame width/height. Choosing the value `1.0` (100%) will basicly disable the moving of the camera, while a value of `0.0` will make the camera very sensitive the every movement on the frame.
+The second and third parameter of the `facedetection.fnc` are the percentage of captured frame width/height. Choosing the value `1.0` (100%) will basicly disable the moving of the camera, while a value of `0.0` will make the camera very sensitive the every movement on the frame.
 
 Finaly, using the facedetection and camera moving capabilities while returning the original but still processed image to via the Flask webserver you just have to just have to change the following line in the [server.py](server.py) file from `frame_face_detected` to `frame`:
 ```
