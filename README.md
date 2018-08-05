@@ -1,6 +1,6 @@
 # py-facedetection-stream
 
-A framework written in Python3 to process a server-side video stream, detect face position and stream it via a webserver written with Flask
+A framework written in Python3 to fetch a server-side video input, detect the position of a face and stream it via a webserver written with Flask.
 
 ## Getting Started
 
