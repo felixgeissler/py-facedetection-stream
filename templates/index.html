@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+    <title>Flask Facetracking Livestream</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        img{
+            margin-top:50px;
+            margin-bottom: 20px;
+        }
+        audio{
+            width: 1280px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="{{ url_for('video_feed') }}"><br>
+
+    <audio controls>
+        <source src="{{ url_for('audiofeed') }}" type="audio/x-wav;codec=pcm">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+
